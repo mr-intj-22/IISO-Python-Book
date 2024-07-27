@@ -1,0 +1,38 @@
+\documentclass[a4paper,12pt,openany]{book}
+\usepackage[a4paper, left=1.5in, right=1in, top=1in, bottom=1in, headheight=13.6pt]{geometry}
+\usepackage{pdfpages} % For including external PDFs
+\usepackage{lipsum} % For dummy text
+\usepackage[english]{babel} % Set the main language to English
+\usepackage{hyperref} % to use urls
+\usepackage{graphicx} % to include images
+
+% Title Page Customization
+\title{
+    \includegraphics[width=0.3\textwidth]{resources/iiso_logo.png}\\[1em] % Include your logo image here
+    \Huge \textbf{Introduction to Python}
+    \footnote{\url{https://www.python.org}} \\[1em]
+    \huge International Islamia School Otsuka
+    \footnote{\url{https://www.iiso-edu.jp}}
+}
+\author{\textsc{Abdulmalek Salem Shefat}\thanks{\href{mailto:malekshefat@gmail.com}{malekshefat@gmail.com}}}
+\date{\today}
+
+% Avoid adding extra pages between chapters
+\newcommand{\cleardoublepagewithoutpagenumber}{%
+  \clearpage
+  \thispagestyle{empty}
+  \pagestyle{empty}
+}
+
+\begin{document}
+
+% Include the external PDF as the first page
+\includepdf[pages=-, fitpaper=true, pagecommand={}] {resources/cover_page.pdf}
+
+\maketitle
+\tableofcontents
+
+\include{PART1/main.tex}
+\include{PART2/main.tex}
+
+\end{document}
