@@ -1,0 +1,11 @@
+{
+  "files.exclude": {
+    "*.git.*": true,
+    "*.aux": true,
+    "*.log": true,
+    "*.fls": true,
+    "*.fdb*": true,
+    "*.sync*": true,
+    "*.toc": true,
+  }
+}
