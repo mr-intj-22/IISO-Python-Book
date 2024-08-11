@@ -7,6 +7,26 @@
 \usepackage{graphicx} % to include images
 \usepackage[x11names]{xcolor}
 
+% syntax highlighting
+\usepackage{listings}
+\usepackage{xcolor} % For syntax highlighting
+\lstset{
+  language=Python,                 % Language
+  basicstyle=\ttfamily\footnotesize, % Font style
+  numbers=left,                   % Line numbers
+  numberstyle=\tiny\color{gray},  % Line number style
+  keywordstyle=\color{blue},      % Keywords style
+  commentstyle=\color{gray},     % Comments style
+  stringstyle=\color{red},        % Strings style
+  backgroundcolor=\color{white}, % Background color
+  frame=single,
+  breaklines=true,
+  showstringspaces=false,
+  columns=flexible,
+  tabsize=4 % Sets the width of the tab
+}
+
+
 % Title Page Customization
 \title{
     \includegraphics[width=0.3\textwidth]{resources/iiso_logo.png}\\[1em] % Include your logo image here
@@ -34,6 +54,6 @@
 \tableofcontents
 
 \include{PART1/main.tex}
-% \include{PART2/main.tex}
+\include{PART2/main.tex}
 
 \end{document}
