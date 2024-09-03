@@ -1,6 +1,7 @@
 {
   "files.exclude": {
     "**/*.git.*": true,
+    "**/*.git*": true,
     "**/*.aux": true,
     "**/*.log": true,
     "**/*.fls": true,
