@@ -21,18 +21,16 @@ Here is a Python code snippet to plot a first-order polynomial using Matplotlib:
 import matplotlib.pyplot as plt
 
 def first_order_polynomial(X: list[int], a: float, b: float) -> list[float]:
-
     Y: list[float] = []
     for x in X:
         y = a * x + b
         Y.append(y)
-
     return Y
-
 
 x = list(range(-10, 10))
 y = first_order_polynomial(x, 2, -2)
 
+# plotting the points
 plt.plot(x, y, "-o", label="Line")
 plt.title("First Order Polynomial")
 plt.xlabel("x")
